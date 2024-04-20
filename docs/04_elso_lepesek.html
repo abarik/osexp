@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="hu" xml:lang="hu"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>OpenSesame a pszichológiai tesztek készítésében - 4&nbsp; Első lépések</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./05_tutorial_01.html" rel="next">
+<link href="./03_megismeres.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/kbd/kbd.js"></script>
+<link href="site_libs/quarto-contrib/kbd/kbd.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Nincs találat",
+    "search-matching-documents-text": "egyező dokumentumok",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Mégse",
+    "search-submit-button-title": "OK",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04_elso_lepesek.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Első lépések</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">OpenSesame a pszichológiai tesztek készítésében</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Előszó</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_bevezetes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Bevezetés</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_telepites.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Letöltés és telepítés</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_megismeres.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">A megismerés forrásai</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_elso_lepesek.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Első lépések</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_tutorial_01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Tutoriál: A tekintet irányítása</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09_hivatkozas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hivatkozások</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tartalomjegyzék</h2>
+   
+  <ul>
+  <li><a href="#munka-az-opensesam-ben" id="toc-munka-az-opensesam-ben" class="nav-link active" data-scroll-target="#munka-az-opensesam-ben"><span class="header-section-number">4.1</span> Munka az OpenSesam-ben</a></li>
+  <li><a href="#példa-kísérletek-áttekintése" id="toc-példa-kísérletek-áttekintése" class="nav-link" data-scroll-target="#példa-kísérletek-áttekintése"><span class="header-section-number">4.2</span> Példa kísérletek áttekintése</a>
+  <ul>
+  <li><a href="#példa-kísérletek-futtatása" id="toc-példa-kísérletek-futtatása" class="nav-link" data-scroll-target="#példa-kísérletek-futtatása"><span class="header-section-number">4.2.1</span> Példa kísérletek futtatása</a></li>
+  <li><a href="#a-kísérlet-elemei" id="toc-a-kísérlet-elemei" class="nav-link" data-scroll-target="#a-kísérlet-elemei"><span class="header-section-number">4.2.2</span> A kísérlet elemei</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Első lépések</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>Az OpenSesame sikeres telepítése után indítsuk el a programot. A megnyitás és a teljes képernyőre nagyítás után a <a href="#fig-full-opensesame-01"><span>4.1</span></a> ábrán látható képernyőképhez hasonló fogad minket.</p>
+<div id="fig-full-opensesame-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/image.png" class="img-fluid figure-img" width="720"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.1: Az OpenSesame képernyőképe</figcaption>
+</figure>
+</div>
+<p>A <a href="#fig-full-opensesame-01"><span>4.1</span></a> ábrán bekapcsoltuk az összes megjeleníthető ablakot. A saját verziónkban is kapcsoljuk be ezeket, az <code>Eszköztár</code> négy speciális ikonjának segítségével. Az <code>Eszköztár</code> a menü alatt található (<a href="#fig-eszkoztar-teljes-01"><span>4.2</span></a> ábra), és az OpenSesame gyakran használt funkcióit tartalmazza.</p>
+<div id="fig-eszkoztar-teljes-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-1277239695.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.2: Az OpenSesame Eszköztára</figcaption>
+</figure>
+</div>
+<p>Az OpenSesame ablakait az <code>Eszköztár</code> négy különböző ikonjával kapcsolhatjuk be, illetve ki (<a href="#fig-eszkoztar-ablakok-01"><span>4.3</span></a> ábra).</p>
+<div id="fig-eszkoztar-ablakok-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-3935704192.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.3: Az OpenSesame ablakit megjelenítő és elrejtő gombok</figcaption>
+</figure>
+</div>
+<p>A fenti gombok a <code>View</code> menüpontból is elérhetők, és ott megtaláljuk az ikonok jelentését is (<a href="#fig-menu-view"><span>4.4</span></a> ábra).</p>
+<div id="fig-menu-view" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-3376193961.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.4: A `View` menüpont</figcaption>
+</figure>
+</div>
+<p>Az egyes ikonok jelentése:</p>
+<ul>
+<li><p>Az <code>Áttekintő ablak</code> ki/be kapcsolása (<code>Overview area</code>)</p></li>
+<li><p><code>Állomány gyűjtő ablak</code> ki/be kapcsolása (<code>File pool</code>)</p></li>
+<li><p><code>Konzol</code> ki/be kapcsolása (<code>Console</code>)</p></li>
+<li><p><code>Változók nyomkövetése ablak</code> ki/be kapcsolása (<code>Variable inspector</code>)</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Próbáld ki
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Az ikonok ki/be kapcsolásával alakítsuk ki saját OpenSesame programunkban a <a href="#fig-eszkoztar-teljes-01"><span>4.2</span></a> ábrán látható képernyőképet. A <code>View</code> menüpont használatával is kapcsoljuk ki, majd be ezeket az ablakokat. Próbáljuk ki a <code>View</code> menüpont többi parancsát is.</p>
+</div>
+</div>
+<p>Térjünk vissza az <a href="#fig-full-opensesame-01"><span>4.1</span></a> ábrán látható képernyőképhez. Az ábrán megjelenő területek (ablakok) a következőek:</p>
+<ul>
+<li>Az <code>Item eszköztár</code> egy mozgatható, de be nem zárható ablak, amely a képernyő bal oldalán jelenik meg. Legtöbbször a fogd és vidd eljárással elemeket fogunk meg és viszünk át az <code>Áttekintő ablak</code>ba.</li>
+</ul>
+<div id="fig-item-eszkoztar" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-2293011965.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.5: Item eszköztár</figcaption>
+</figure>
+</div>
+<ul>
+<li><code>Áttekintő ablak</code> (<code>Overview</code>), amely az éppen szerkesztett kísérlet teljes leírását, szerkezetét tartalmazza. Egy kísérlet lényegében egymás alá helyezett itemek sorozata. Minél több item szerepel az <code>Áttekintő ablak</code>ban, annál bonyolultabb a kísérletünk. A <a href="#fig-attekinto-ablak-01"><span>4.6</span></a> ábrán látható kísérlet nagyon egyszerű, mindössze 2 hozzáadott itemet tartalmaz (<code>getting_started</code> és <code>welcome</code>).</li>
+</ul>
+<div id="fig-attekinto-ablak-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-3809640374.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.6: Áttekintő ablak</figcaption>
+</figure>
+</div>
+<ul>
+<li>A <code>Tab ablak</code>, amely a leggyakrabban használt szerkesztési terület. Alapértelmezés szerint egy köszöntő szöveget és néhány nyomógombot tartalmaz (<a href="#fig-tab-ablak-01"><span>4.7</span></a> ábra), de később látni fogjuk, hogy az <code>Áttekintő ablak</code>ban éppen kiválasztott item szerkesztését tudjuk itt elvégezni.</li>
+</ul>
+<div id="fig-tab-ablak-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-1744055763.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.7: Tab ablak</figcaption>
+</figure>
+</div>
+<ul>
+<li><code>Állomány gyűjtő</code>, amely a kísérletben használt kép- és hangingerek megjelenítéséért felelős állományokat tartalmazza (<a href="#fig-allomany-gyujto-ablak-01"><span>4.8</span></a> ábra). Tipikusan tehát <code>.png</code> és <code>.mp3</code> vagy <code>.ogg</code> állományokat tartalmaz, de bármilyen állomány hozzáadható a kísérlethez. Ezek az állományok az éppen szerkesztett, a kísérlet teljes leírásáért felelős OpenSesame adatállományban (<code>.osexp</code> kiterjesztéssel) tárolódnak, így a kísérletnek nem lesznek külső függőségeik, nem kell tartanunk attól, hogy a kísérlet futtatása során nem talál egy képet vagy hangot az OpenSesame. Ez lényeges eltérés az Inquisit <code>.iqx</code> állományaihoz képest, ugyanis azok csak a kísérletet leíró szkriptsorokat tartalmazzák, a kísérletben felhasznált képeket és hangokat nem.</li>
+</ul>
+<div id="fig-allomany-gyujto-ablak-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-1586790111-01.png" class="img-fluid figure-img" width="360"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.8: Állomány gyűjtő ablak</figcaption>
+</figure>
+</div>
+<ul>
+<li>A <code>Változók nyomkövetése ablak</code>, amely a kísérletben felhasznált és potenciálisan menthető változók nevét és aktuális értékét tartalmazza (<a href="#fig-valtozok-nyokovetese-ablak-01"><span>4.9</span></a> ábra). A kísérletünk helyes működését tudjuk itt ellenőrizni.</li>
+</ul>
+<div id="fig-valtozok-nyokovetese-ablak-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-3734068597.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.9: Változók nyomkövetése ablak</figcaption>
+</figure>
+</div>
+<ul>
+<li>A <code>Konzol ablak</code>, amely a kísérlet futtatásáért felelős Python rendszer üzeneteit tartalmazz (<a href="#fig-konzol-ablak-01"><span>4.10</span></a> ábra). A legtöbb esetben nem kell figyelnünk a konzol sorait, de futási hiba esetén a hiba lehetséges oka a konzolban megjelenhet.</li>
+</ul>
+<div id="fig-konzol-ablak-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-205628420.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.10: Konzol ablak</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Próbáld ki
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Vegyük birtokba az OpenSesame felhasználói felületét. Az ablakok ki/be kapcsolása után próbáljuk ki az Áttekintő ablakot. Kattintsunk az Áttekintő ablak minden egyes elemén, és vegyük észre, hogyan változik meg a Tab ablak tartalma. Itt az egyes itemek szerkesztésére van lehetőség, nézzük át a lehetőségeinket. Fogd és vidd eljárással tegyünk át itemeket az Áttekintő ablakba, és nézzük meg ezek szerkesztési lehetőségeit. Ismerjük meg az itemeket a <a href="https://osdoc.cogsci.nl/" class="uri">https://osdoc.cogsci.nl/</a> oldal <code>Items</code> menüpontja segítségével. Ha a felület valamely elemét nem uraljuk, forduljunk segítségért a <a href="https://osdoc.cogsci.nl/4.0/manual/interface/" class="uri">https://osdoc.cogsci.nl/4.0/manual/interface/</a> oldalhoz.</p>
+</div>
+</div>
+<section id="munka-az-opensesam-ben" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="munka-az-opensesam-ben"><span class="header-section-number">4.1</span> Munka az OpenSesam-ben</h2>
+<p>A felület egyes elemeinek megismerése után, tekintsük át az OenSesame funkcióit. Nagyon leegyszerűsítve a teljes munkafolyamat az Opensesam-ban (és az Inquisitben is) a következő lépésekből áll:</p>
+<ol type="1">
+<li><p><strong>A kísérletet leíró állomány megnyitása vagy létrehozása</strong></p>
+<ul>
+<li><p>OpenSesamban a kísérletet egy <code>.osexp</code> kiterjesztésű állományban tároljuk.</p></li>
+<li><p>Inquisitben <code>.iqx</code> kiterjesztésű állományt használunk.</p></li>
+</ul></li>
+<li><p><strong>A kísérletet leíró állomány szerkesztése</strong></p>
+<ul>
+<li><p>OpenSesam-ban ez a szerkesztési folyamat a grafikus felületen történő egérkattintásokat, fogd és vidd műveleteket, illetve vezérlőelemek (például beviteli mezők, listadobozok) tartalmának meghatározását jelenti. A folyamat tehát rendkívül felhasználóbarát.</p></li>
+<li><p>Inquisitben egy HTML-hez hasonló szkriptnyelven fogalmazzuk meg a kísérlet menetét és annak minden elemét. Az OpenSesam-hoz hasonló, grafikus szerkesztési lehetőséget az Inquisit nem tartalmaz.</p></li>
+</ul></li>
+<li><p><strong>A kísérletet leíró állomány tesztelése</strong></p>
+<ul>
+<li>Az OpenSesam és az Inquisit is biztosít lehetőséget a kísérlet gyors és részletes áttekintésére is. Meg tudunk győződni, arról hogy az elkészült kísérletünk hibamentes, és minden kívánt összetevőt tartalmaz. Ezzel alkalmassá válik arra, hogy éles környezetben, kísérleti személyek hívásával, a tényleges adatgyűjtő tevékenységet el tudjuk kezdeni.</li>
+</ul></li>
+<li><p><strong>Adatgyűjtés az elkészült, kísérletet leíró állomány segítségével</strong></p>
+<ul>
+<li><p>Az OpenSesam (és az Inquisit is) lehetőséget ad arra, hogy az elkészült állományt éles környezetben bevessük, azaz a kísérletben résztvevő személyek számra lefuttassuk a kísérletet: a résztvevők kitöltik (megadják a válaszokat) a kísérletben szereplő kérdésekre. A kísérlet futtatása magába foglalja a következő lépéseket:</p>
+<ul>
+<li><p>A kísérleti személy azonosítja magát a program számára. Ezt a lépést rendszerint a kísérlet vezetője végzi. Ez a lépés kulcsfontosságú, mert a választott azonosító a kísérleti személy válaszaival együtt kerül tárolásra.</p></li>
+<li><p>A kísérleti személy végrehajtja a kísérletet (vagyis különböző ingerekre különböző válaszokat ad).</p></li>
+<li><p>A kísérlet végén a kísérleti személy válaszai és a kísérlet elején választott azonosító tárolásra kerül. Az OpenSesame és az Inqusit is tagolt szöveges (CSV) állományban tárolja ezeket.</p></li>
+</ul></li>
+</ul></li>
+</ol>
+</section>
+<section id="példa-kísérletek-áttekintése" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="példa-kísérletek-áttekintése"><span class="header-section-number">4.2</span> Példa kísérletek áttekintése</h2>
+<p>A tipikus munkafolyamat lépéséit az előző fejezetben részleteztük. Ebben a részben a gyakorlatban is bemutatjuk a munkafolyamat egyes lépéseit úgy, hogy segítségül hívunk mások által korábban készített kísérleteket. A teljes folyamatból kihagyjuk azt a lépést, amely kísérlet létrehozását részletezi, ezt a következő fejezetben mutatjuk be. Jelen fejezet célja, hogy</p>
+<ul>
+<li><p>tovább barátkozzunk az OpenSesame felhasználói felületével, és</p></li>
+<li><p>megértsük a kísérlet fogalmát, valamint a munkafolyamat lépéseit.</p></li>
+</ul>
+<section id="példa-kísérletek-futtatása" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="példa-kísérletek-futtatása"><span class="header-section-number">4.2.1</span> Példa kísérletek futtatása</h3>
+<p>Első lépésként tekintsük <code>Tools / Example experiments</code> menüpontot, amely számos beépített elkészített OpenSesame kísérlet tartalmaz (<a href="#fig-beepitett-kiserletek-01"><span>4.11</span></a> ábra).</p>
+<div id="fig-beepitett-kiserletek-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-1065535767.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.11: Beépített kísérletek elérése</figcaption>
+</figure>
+</div>
+<p>A menüpont kiválasztása után a <code>Tab ablakb</code>an nyílik lehetőség a beépített kísérletek megnyitására ( <a href="#fig-beepitett-kiserletek-megnyitasa-01"><span>4.12</span></a> ábra).</p>
+<div id="fig-beepitett-kiserletek-megnyitasa-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-2372402028.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.12: Beépített kísérletek megnyitása</figcaption>
+</figure>
+</div>
+<p>Válasszuk ki az első, <code>Attentional blink</code> nevű kísérletet. Amennyiben dialógus doboz jelenne meg a meglévő kísérlet mentésével kapcsolatban, válasszuk a <code>No</code> opciót.</p>
+<p>Az <code>Attentional blink</code> nevű kísérletet <span class="citation" data-cites="raymond1992">(<a href="09_hivatkozas.html#ref-raymond1992" role="doc-biblioref">Raymond és mtsai., 1992</a>)</span> a vizuális feldolgozás ideiglenes elnyomásáról szól egy gyors, sorozatos vizuális bemutatási (RSVP) feladatban. A résztvevőket arra kérték, hogy azonosítsanak egy részben meghatározott betűt, majd ismerjenek fel egy teljesen meghatározott betűt.</p>
+<p>Miután az OpenSesame betöltötte a kért kísérletet, látható, hogy a az <code>Áttekintő ablak</code>számos itemet tartalmaz (<a href="#fig-attention-blink-kiserlet"><span>4.13</span></a>). Ezek jelentik a kísérlet megvalósítását.</p>
+<div id="fig-attention-blink-kiserlet" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-4122181675.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.13: A beolvasott Attentional blink nevű kísérlet</figcaption>
+</figure>
+</div>
+<p>Anélkül, hogy bármi további információnk lenne a kísérletről, futtassuk le. Nyomjuk meg a <kbd>Ctrl-R</kbd> gyorsbillentyűt. Megjelenik egy dialógus doboz (<a href="#fig-kiserleti-szemely-azonositasa"><span>4.14</span></a> ábra), amely a kísérleti személy azonosításáért felelős. Most az <code>OK</code> gombbal nyugtázzuk a dialógus dobozt, ugyanis nem éles szituációban vagyunk, a 0 azonosító megfelelő lehet.</p>
+<div id="fig-kiserleti-szemely-azonositasa" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-1607174896.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.14: Kísérleti személy azonosítása a kísérlet futtatása előtt</figcaption>
+</figure>
+</div>
+<p>A kísérlet elindulása előtt még egy <code>Choose location for logfile (press 'escape' for default location)</code> dialógusdoboz is megjelenik, ahol a korábban megadott 0 azonosítóhoz tartozó válaszállomány (<code>subject-0.csv)</code> számára egy könyvtárat kell találnunk. Mindig adjuk meg a mentés pontos helyét, ne léjünk ki az <kbd>ESC</kbd> billentyűvel. A <code>Mentés</code> gomb megnyomása után elindul a kísérlet. Próbáljuk ki, járjunk el az utasításoknak megfelelően.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Próbáld ki
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Az <code>Attentional blink</code> nevű kísérletet csak egy a beépített kísérletek között, próbáljunk ki minél többet. Nyissunk meg egyet a <code>Tools / Example experiments</code> menüponton keresztül, majd futtassuk a <kbd>Ctrl-R</kbd> gyorsbillentyűvel, hajtsuk végre, majd nyissunk meg egy újat, és így tovább.</p>
+</div>
+</div>
+</section>
+<section id="a-kísérlet-elemei" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="a-kísérlet-elemei"><span class="header-section-number">4.2.2</span> A kísérlet elemei</h3>
+<p>Korábban megbeszéltük, hogy a munka az OpenSesam-ban (és az Inquisit-ben) a következő lépéseket tartalmazza:</p>
+<ol type="1">
+<li><p>A kísérletet leíró állomány megnyitása vagy létrehozása.</p></li>
+<li><p>A kísérletet leíró állomány szerkesztése.</p></li>
+<li><p>A kísérletet leíró állomány tesztelése.</p></li>
+<li><p>Adatgyűjtés az elkészült, kísérletet leíró állomány segítségével.</p></li>
+</ol>
+<p><strong>1. A kísérletet leíró állomány megnyitása vagy létrehozása.</strong> Ez a lépés elengedhetetlen, hiszen a létrehozandó/szerkesztendő/futtatandó kísérletet természetesen meg kell nyitnunk. Ez egy létező <code>.osexp</code> állomány megnyitását, vagy egy új <code>.osexp</code> állomány létrehozását jelenti (Inquisit-ben <code>.iqx</code>). A szokásos menüpontok a <code>File / Open</code> vagy a <code>File / New</code>. A tanulási folyamatban beépített kísérleteket is használhatunk, így bepillanthatunk, milyen összetevőket tartalmaz egy komoly kísérlet. Épp ezt tesszük ebben a fejezetben. Más esetben azonban egy üres kísérlettel kezdünk, és magunk építjük fel a teljes kísérletet egyes elemeit, a blokkokat, kérdéseket stb. Ezt tesszük a következő fejezetben.</p>
+<p><strong>2. A kísérletet leíró állomány szerkesztése.</strong> Az kísérlet létrehozása ebben a fázisban történik. Tipikus műveletek:</p>
+<ul>
+<li><p>Item átemelése a fogd és vidd eljárással az <code>Item eszköztár</code>ból az <code>Áttekintés ablak</code>ba.</p></li>
+<li><p>Kattintással item kijelölése az <code>Áttekintés ablak</code>ban és a kijelölt item szerkesztése a <code>Tab ablak</code>ban.</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Próbáld ki
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Nyissuk meg az <code>Attentional blink</code> nevű kísérletet a <code>Tools / Example experiments</code> menüponton keresztül. Tekintsük a az <code>Áttekintés ablak</code> tartalmát, amely a teljes kísérlet leírásáért felelős itemeket tartalmazza. Ha egy item fölé visszük az egeret, akkor egy <code>Type</code> és egy <code>Description</code> információ jelenik meg a tooltip-ben. Keressük meg a kapcsolatot az egyes itemek esetén az adott itemhez tartozó ikon alakja és a tooltip-ben lévő információ alapján: (1) az <code>Item eszköztár</code> elemeihez; (2) a <code>Tab ablak</code> fejlécében lévő információhoz.</p>
+</div>
+</div>
+<p>Miután egy vagy több példa kísérletet lefuttattunk, képet kaphattunk arról, milyen elemekből épül fel egy tipikus kísérlet. A legfontosabb elemek a következők:</p>
+<ul>
+<li><p><strong>instrukciós oldalak</strong>: tájékoztatjuk a kísérleti személy a kísérlet lefolyásáról, elmagyarázzuk, hogy pontosan mi lesz a dolga a kísérlet alatt</p></li>
+<li><p><strong>információs oldalak</strong> (opcionális): a kísérleti személy a kísérlet során nyújtott teljesítményéről visszajelzést kap. Tipikusan a reakcióidőt és a helyes válaszok arányát közöljük.</p></li>
+<li><p><strong>részek</strong>: a kísérletben megkülönböztetünk gyakorló és éles részt. A gyakorló rész opcionális, de a legtöbb kísérletben szerepel. A gyakorló részben adott válaszokat többnyire nem értékeljük ki.</p></li>
+<li><p><strong>blokkok</strong>: az egyes részekben (gyakorló és éles) a kérdések általában valamilyen terv szerint érkeznek a kísérleti személyhez. Ennek a kísérleti tervnek a szervezési egysége a blokk. Később látunk kísérleti terv megvalósítására példát, most fogadjuk el, hogy a kísérlet egyes részei blokkokból állnak.</p></li>
+<li><p><strong>kérdések</strong>: a kísérlet legfontosabb egysége, hiszen az itt megjelenő ingerekre kérjük és tároljuk el a kísérleti személy válaszát. A kérdések blokkokba szerveződnek, és a blokkok adják a kísérlet gyakorló és éles részét.</p></li>
+<li><p><strong>ingerek</strong>: a kérdésekben megjelenő ingerek, amelyek lehetnek szöveges, kép, hang vagy videó (és animáció) jellegű ingerek.</p></li>
+<li><p><strong>válaszok</strong>: a kérdésben a kísérleti személy válasza a megjelenő ingerre, tipikus a billentyűzet és az egér használata válaszadáshoz.</p></li>
+</ul>
+<p>OpenSesame-ban a kísérlet fenti elemei az <code>Áttekintő ablak</code>ban jelennek meg. Ennek megfelelően vannak olyan itemek, amelyek az intsrukciós oldalak, az információs oldalak stb. kialakításáért felelősek. A <a href="#fig-attekinto-attekintese-01"><span>4.15</span></a> ábrán összekapcsoltuk az <code>Áttekintő ablak</code> tartalmát a kísérletet felépítő elemekkel. Az <code>Attentional blink</code> nevű kísérletet vettük alapul.</p>
+<div id="fig-attekinto-attekintese-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-2656978492.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.15: Az Áttekintó ablak tartalmának és a kísérletet felépítő elemeknek a kapcsolata</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Próbáld ki
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Válasszuk ki a <a href="#fig-attekinto-attekintese-01"><span>4.15</span></a> ábrán látható itemeket, és vizsgáljuk meg a <code>Tab ablak</code>ban, hogyan szolgálhatják az itt látható egyes beállítások a kísérlet leírását.</p>
+</div>
+</div>
+<p><strong>3\. A kísérletet leíró állomány tesztelése.</strong> A kísérlet szerkesztése során időnként tesztelnünk kell a kísérletet, meg kell győződnünk arról, hogy minden az előzetes tervnek megfelelően került kialakításra. Ehhez a <code>Run / Quick run</code> menüpontot válasszuk ki, vagy használhatjuk a <kbd>Ctrl+Shift+W</kbd> gyorsbillentyűt is. Használhatjuk az eszköztár megfelelő ikonját is (<a href="#fig-quick-run-01"><span>4.16</span></a> ábra).</p>
+<div id="fig-quick-run-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-3738936490.png" class="img-fluid figure-img" width="480"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.16: A kísérlet tesztelése</figcaption>
+</figure>
+</div>
+<p>A kísérlet a korábban látott módon lefut, de néhány, a teszteléshez nélkülözhető lépés kimarad. Például nem kell gondoskodnunk a válaszok tárolásáról, vagyis nem jelenik meg dialógus doboz a CSV állomány célkönyvtáráról. Továbbá, a kísérletbe beépített várakozási időket is figyelmen kívül hagyja a gyors futtatás funkció. A kísérletből az <kbd>ESC</kbd> billentyűvel tudunk kilépni.</p>
+<p><strong>4. Adatgyűjtés az elkészült, kísérletet leíró állomány segítségével.</strong> Amennyiben ellenőriztük, és több körben teszteltük az kész kísérletet, akkor kezdődhet az adatgyűjtés. Kísérleti személyeket hívunk, és számukra is lefuttatjuk a kísérletet, ők pedig az instrukcióknak megfelelően megadják az egyes ingerekre a válaszukat. A kísérlet futtatásához <code>Run / Run in window</code> menüpontot válasszuk ki, vagy használhatjuk a <kbd>Ctrl+R</kbd> gyorsbillentyűt is (<a href="#fig-run_01"><span>4.17</span></a> ábra . Használhatjuk az eszköztár megfelelő ikonját is (<a href="#fig-run-ikon-01"><span>4.18</span></a> ábra).</p>
+<div id="fig-run_01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-259861245.png" class="img-fluid figure-img" width="310"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.17: Kísérlet futtatása</figcaption>
+</figure>
+</div>
+<div id="fig-run-ikon-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-3659848253.png" class="img-fluid figure-img" width="480"></p>
+<figcaption class="figure-caption">Ábra&nbsp;4.18: Kísérlet futtatása ikon segítségével</figcaption>
+</figure>
+</div>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-raymond1992" class="csl-entry" role="listitem">
+Raymond, J. E., Shapiro, K. L., &amp; Arnell, K. M. (1992). Temporary suppression of visual processing in an RSVP task: An attentional blink? <em>Journal of Experimental Psychology: Human Perception and Performance</em>, <em>18</em>(3), 849–860. <a href="https://doi.org/10.1037/0096-1523.18.3.849">https://doi.org/10.1037/0096-1523.18.3.849</a>
+</div>
+</div>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Sikeres másolás!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Sikeres másolás!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./03_megismeres.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">A megismerés forrásai</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./05_tutorial_01.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Tutoriál: A tekintet irányítása</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>

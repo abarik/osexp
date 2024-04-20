@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="hu" xml:lang="hu"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>OpenSesame a pszichológiai tesztek készítésében - 5&nbsp; Tutoriál: A tekintet irányítása</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./09_hivatkozas.html" rel="next">
+<link href="./04_elso_lepesek.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/kbd/kbd.js"></script>
+<link href="site_libs/quarto-contrib/kbd/kbd.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Nincs találat",
+    "search-matching-documents-text": "egyező dokumentumok",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Mégse",
+    "search-submit-button-title": "OK",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./05_tutorial_01.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Tutoriál: A tekintet irányítása</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">OpenSesame a pszichológiai tesztek készítésében</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Előszó</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_bevezetes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Bevezetés</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_telepites.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Letöltés és telepítés</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_megismeres.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">A megismerés forrásai</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_elso_lepesek.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Első lépések</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_tutorial_01.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Tutoriál: A tekintet irányítása</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09_hivatkozas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Hivatkozások</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tartalomjegyzék</h2>
+   
+  <ul>
+  <li><a href="#az-opensesame-ről" id="toc-az-opensesame-ről" class="nav-link active" data-scroll-target="#az-opensesame-ről"><span class="header-section-number">5.1</span> Az OpenSesame-ről</a></li>
+  <li><a href="#a-kísérlet" id="toc-a-kísérlet" class="nav-link" data-scroll-target="#a-kísérlet"><span class="header-section-number">5.2</span> A kísérlet</a></li>
+  <li><a href="#kísérleti-terv" id="toc-kísérleti-terv" class="nav-link" data-scroll-target="#kísérleti-terv"><span class="header-section-number">5.3</span> Kísérleti terv</a></li>
+  <li><a href="#lépés-hozzuk-létre-a-fő-szekvenciát" id="toc-lépés-hozzuk-létre-a-fő-szekvenciát" class="nav-link" data-scroll-target="#lépés-hozzuk-létre-a-fő-szekvenciát"><span class="header-section-number">5.4</span> 1. lépés: Hozzuk létre a fő szekvenciát</a>
+  <ul>
+  <li><a href="#instrukciós-oldalak-hozzáadása" id="toc-instrukciós-oldalak-hozzáadása" class="nav-link" data-scroll-target="#instrukciós-oldalak-hozzáadása"><span class="header-section-number">5.4.1</span> Instrukciós oldalak hozzáadása</a></li>
+  <li><a href="#ciklus-és-újabb-szekvencia-hozzáadása" id="toc-ciklus-és-újabb-szekvencia-hozzáadása" class="nav-link" data-scroll-target="#ciklus-és-újabb-szekvencia-hozzáadása"><span class="header-section-number">5.4.2</span> Ciklus és újabb szekvencia hozzáadása</a></li>
+  <li><a href="#füzzünk-hozzá-egy-új-form_text_display-elemet-a-gyakorló-fázis-végén" id="toc-füzzünk-hozzá-egy-új-form_text_display-elemet-a-gyakorló-fázis-végén" class="nav-link" data-scroll-target="#füzzünk-hozzá-egy-új-form_text_display-elemet-a-gyakorló-fázis-végén"><span class="header-section-number">5.4.3</span> Füzzünk hozzá egy új <code>form_text_display</code> elemet a gyakorló fázis végén</a></li>
+  <li><a href="#az-éles-rész-elkészítése" id="toc-az-éles-rész-elkészítése" class="nav-link" data-scroll-target="#az-éles-rész-elkészítése"><span class="header-section-number">5.4.4</span> Az éles rész elkészítése</a></li>
+  <li><a href="#adjunk-egy-instrukciós-oldalt-a-kísérlet-végéhez" id="toc-adjunk-egy-instrukciós-oldalt-a-kísérlet-végéhez" class="nav-link" data-scroll-target="#adjunk-egy-instrukciós-oldalt-a-kísérlet-végéhez"><span class="header-section-number">5.4.5</span> Adjunk egy instrukciós oldalt a kísérlet végéhez</a></li>
+  <li><a href="#adjunk-beszédes-neveket-az-itemeknek" id="toc-adjunk-beszédes-neveket-az-itemeknek" class="nav-link" data-scroll-target="#adjunk-beszédes-neveket-az-itemeknek"><span class="header-section-number">5.4.6</span> Adjunk beszédes neveket az itemeknek</a></li>
+  <li><a href="#adjunk-beszédes-nevet-az-egész-kísérletnek" id="toc-adjunk-beszédes-nevet-az-egész-kísérletnek" class="nav-link" data-scroll-target="#adjunk-beszédes-nevet-az-egész-kísérletnek"><span class="header-section-number">5.4.7</span> Adjunk beszédes nevet az egész kísérletnek</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Tutoriál: A tekintet irányítása</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>A következő leírás a <a href="https://osdoc.cogsci.nl/4.0/tutorials/beginner/" class="uri">https://osdoc.cogsci.nl/4.0/tutorials/beginner/</a> oldal alapján készült. A célja az OpenSesame részletesebb bemutatása. A hivatalos oldalon szereplő minden részletre nem térünk ki, érdemes az oldalt felkeresni, sőt a többi felajánlott tutoriált is áttekinteni.</p>
+<section id="az-opensesame-ről" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="az-opensesame-ről"><span class="header-section-number">5.1</span> Az OpenSesame-ről</h2>
+<p>Ahogy korábban említettük az OpenSesame egy olyan program, amely lehetővé teszi pszichológiai, neurológiai és közgazdasági kísérletek egyszerű fejlesztését. Különösen alkalmas pszichológus hallgatók számára tesztkészítésre, mert egy grafikus, kattintásra épülő felülettel rendelkezik. A haladóbb, programozási ismeretekkel rendelkező felhasználók számára pedig Python és JavaScript kódok beépítését teszi lehetővé.</p>
+</section>
+<section id="a-kísérlet" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="a-kísérlet"><span class="header-section-number">5.2</span> A kísérlet</h2>
+<p>Ebben a tutoriálban egy olyan kísérletet fogunk létrehozni, amelyet <span class="citation" data-cites="friesen1998">Friesen &amp; Kingstone (<a href="09_hivatkozas.html#ref-friesen1998" role="doc-biblioref">1998</a>)</span> mutatott be. Ebben a kísérletben egy arcot középre helyezünk a képernyőn (<a href="#fig-kiserlet_kep-01"><span>5.1</span></a> ábra). Az arc vagy jobbra vagy balra néz. Egy célbetűt (<code>F</code> vagy <code>H</code>) a képernyő bal vagy jobb oldalán jelenítünk meg. A zavaró stimulus (az <code>X</code> betű) a képernyő másik oldalán jelenik meg. A feladat az, hogy minél gyorsabban jelezze a kísérleti személy, hogy a célbetű <code>F</code> vagy <code>H</code>. Kongruens állapotban az arc a célbetűt nézi. Inkongruens állapotban az arc a zavaró ingert (<code>X</code>) nézi. A hipotetikus eredmény szerint, a résztvevők gyorsabban reagálnak kongruens állapotban, mint inkongruensben, annak ellenére, hogy a tekintet iránya nem prediktív a cél helyzetére. Ez azt mutatja, hogy figyelmünket más emberek tekintete automatikusan irányítja, még olyan helyzetekben is, ahol ez nem szolgál semmilyen célra. (És még akkor is, ha az arc csak egy szmájli!)</p>
+<div id="fig-kiserlet_kep-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-2694159499.png" class="img-fluid figure-img" width="420"></p>
+<figcaption class="figure-caption">Ábra&nbsp;5.1: Az ebben a tutoriálban megvalósítandó tekintet-irányítási paradigma <span class="citation" data-cites="friesen1998">(<a href="09_hivatkozas.html#ref-friesen1998" role="doc-biblioref">Friesen &amp; Kingstone, 1998</a>)</span>. Ez a példa egy olyan konkrét próbát (kérdést) mutat be, amely inkongruens állapotot jelöl. A szmájli a zavaró ingerre (<code>X</code>) néz, és nem a célra (<code>F</code>).</figcaption>
+</figure>
+</div>
+<p>A kísérlet gyakorló és kísérleti (éles) részekből áll. Vizuális visszajelzést kap a kísérleti személy minden gyakorló blokk után. Ezen túl, minden helytelen válasz esetén egy hangot fog hallani a kísérleti személy.</p>
+</section>
+<section id="kísérleti-terv" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="kísérleti-terv"><span class="header-section-number">5.3</span> Kísérleti terv</h2>
+<p>A kísérleti terv részletes magyarázata <a href="https://youtu.be/aWvibRH6D4E?si=YO2CcfFhMvrNzIWK">ebben</a> a videóban érhető el. Az OpenSesame kísérleteket a megvalósítás előtt érdemes alaposan átgondolni. Egy konkrét kísérleti terv alapján sokkal könnyebb felépíteni a kísérletet. Erre látunk példát ebben a videóban. Az OpenSesame megismerését a videó megtekintése nem befolyásolja, de a jövőbeni kísérleti tervek elkészítéséhez hasznos lehet.</p>
+</section>
+<section id="lépés-hozzuk-létre-a-fő-szekvenciát" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="lépés-hozzuk-létre-a-fő-szekvenciát"><span class="header-section-number">5.4</span> 1. lépés: Hozzuk létre a fő szekvenciát</h2>
+<p>A OpenSesame elindítása után a <code>Get started!</code> oldal jelenik meg a <code>Tab ablak</code>ban (<a href="#fig-get-started-01"><span>5.2</span></a> ábra). Ha már korábban elindítottuk a programot, akkor a <kbd>Ctrl+N</kbd> gyorsbillentyűvel jeleníthetjük meg a kezdőoldalt.</p>
+<div id="fig-get-started-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-2187824986.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Ábra&nbsp;5.2: Az OpenSesame kezdőképernyője</figcaption>
+</figure>
+</div>
+<p>A <code>Get started!</code> alatt látható a sablonok listája. Ezek a sablonok kényelmes kiindulópontot nyújtanak az új kísérletekhez. Ha már korábban hoztunk létre kísérletet, akkor a legutóbbi kísérletek megjelennek a <code>Continue with a recent experiment</code>alatt.</p>
+<p>Most kattintsunk a <code>Default template</code> gombra, ezzel egy minimális kísérleti sablonnal tudjuk elkezdeni a munkát. (Az <code>Extended template</code> jó kiindulópont lehet később a kísérletek számára, ugyanis ez már tartalmazza a próbák alapstruktúráját.)</p>
+<p>A sablon kiválasztása után, az <code>Áttekintő ablak</code>ban megjelenik egy <code>experiment</code> nevú szekvencia, amely két további itemet tartalmaz: <code>getting_started</code> és <code>welcome</code>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Végezd el
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mivel nincs szükségünk ezekre az elemekre, töröljük a <code>getting_started</code> elemet az <code>Áttekintés ablak</code>ban jobb kattintással az elemen, majd a <code>Delete</code> opció kiválasztásával. Ugyanígy töröljük a <code>welcome</code> elemet is. Az <code>experiment</code> szekvencia így üressé válik.</p>
+</div>
+</div>
+<p>A <a href="#fig-itemek-torlese-01"><span>5.3</span></a> ábrán látható az Áttekintés ablak tartalma a törlés után.</p>
+<div id="fig-itemek-torlese-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-3022561369.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Ábra&nbsp;5.3: Az Áttekintés és a Tab ablak tartalma a két item törlése után</figcaption>
+</figure>
+</div>
+<section id="instrukciós-oldalak-hozzáadása" class="level3" data-number="5.4.1">
+<h3 data-number="5.4.1" class="anchored" data-anchor-id="instrukciós-oldalak-hozzáadása"><span class="header-section-number">5.4.1</span> Instrukciós oldalak hozzáadása</h3>
+<p>A kísérlet elején egy instrukciós oldalt fogunk megjeleníteni a kísérleti személynek. Ehhez a <code>form_text_display</code> elemet fogjuk használni. A <code>form_text_display</code> elem egy olyan item, amely szöveget jelenít meg. Ezt az elemet fogjuk használni a kísérleti személynek szóló instrukciók megadására a kísérlet elején.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Végezd el
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Kattintsunk az <code>experiment</code> elemen az <code>Áttekintés ablak</code>ban. Az item beállításai a <code>Tab ablak</code>ban jelennek meg, ahol egy üres szekvenciát láthatunk. A fogd és vidd módszerrel helyezzünk egy <code>form_text_display</code> elemet az <code>Item eszköztár</code>ból. A keresett item a <code>Form</code> csoportban található.</p>
+</div>
+</div>
+<p>Az Áttekintő ablak és a Tab ablak tartalma a <a href="#fig-itemek-hozzaadasa-01"><span>5.4</span></a> ábrán látható módon változott meg.</p>
+<div id="fig-itemek-hozzaadasa-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="images/clipboard-2056152847.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Ábra&nbsp;5.4: Az Áttekintés és Tab ablak tartalma instrukció hozzáadása után</figcaption>
+</figure>
+</div>
+</section>
+<section id="ciklus-és-újabb-szekvencia-hozzáadása" class="level3" data-number="5.4.2">
+<h3 data-number="5.4.2" class="anchored" data-anchor-id="ciklus-és-újabb-szekvencia-hozzáadása"><span class="header-section-number">5.4.2</span> Ciklus és újabb szekvencia hozzáadása</h3>
+<p>A gyakorló rész számára egy ciklust kell hozzáadnunk az <code>experiment</code> szekvenciához. Ehhez a <code>loop</code> elemet fogjuk használni. A ciklus elem egy olyan elem, amely egy másik elemet többször futtat. Ezt az elemet fogjuk használni a kísérlet gyakorló fázisához.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Végezd el
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Fogd és vidd módszerrel helyezzünk egy <code>loop</code> elemet az <code>Item eszköztár</code>ból az <code>experiment</code> szekvenciába. Az új elemek mindig azon elem alá kerülnek, amelyre ráhúztuk őket. Tehát ha az új ciklust a korábban létrehozott <code>form_text_display</code> elemre húzzuk, akkor az ott fog megjelenni. Ha az új elemet rossz helyre húzzuk, később mozgatással könnyen átrendezhetjük őket.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-337547263.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Az Áttekintés és Tab ablak tartalma ciklus hozzáadása után</figcaption>
+</figure>
+</div>
+<p>A ciklus önmagában nem csinál semmit. Mindig szüksége van egy másik elemre, amelyet futtat. Ezért ki kell töltenünk az új ciklus elemet egy másik elemmel. Ha a <code>Tab ablak</code>ban megnézzük a ciklust, akkor egy figyelmeztető üzenet is megjelenik, mely szerint nincs ismétlendő elem a ciklusban.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Végezd el
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A fogd és vidd módszerrel helyezzünk egy <code>sequence</code> elemet az <code>Item eszköztár</code>ból a ciklus elembe. Egy felugró ablak jelenik meg, amely megkérdezi, hogy az új szekvenciát a ciklus elem után vagy bele szeretnénk-e helyezni. Válasszuk az <code>Insert into new_loop</code> lehetőséget.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2499736906.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Az Áttekintés és Tab ablak tartalma szekvencia hozzáadása után</figcaption>
+</figure>
+</div>
+</section>
+<section id="füzzünk-hozzá-egy-új-form_text_display-elemet-a-gyakorló-fázis-végén" class="level3" data-number="5.4.3">
+<h3 data-number="5.4.3" class="anchored" data-anchor-id="füzzünk-hozzá-egy-új-form_text_display-elemet-a-gyakorló-fázis-végén"><span class="header-section-number">5.4.3</span> Füzzünk hozzá egy új <code>form_text_display</code> elemet a gyakorló fázis végén</h3>
+<p>A gyakorló rész után tájékoztatni szeretnénk a résztvevőt, hogy a valódi kísérlet el fog kezdődni. Ehhez szükségünk van egy újabb <code>form_text_display</code> elemre.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Végezd el
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A fogd és vidd módszerrel helyezzünk el a ciklus után egy egy <code>form_text_display</code> elemet az <code>Item eszköztár</code>ból</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-4147944983.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Az Áttekintés és Tab ablak tartalma egy újabb instrukciós oldal hozzáadása után</figcaption>
+</figure>
+</div>
+</section>
+<section id="az-éles-rész-elkészítése" class="level3" data-number="5.4.4">
+<h3 data-number="5.4.4" class="anchored" data-anchor-id="az-éles-rész-elkészítése"><span class="header-section-number">5.4.4</span> Az éles rész elkészítése</h3>
+<p>Adjunk meg egy új ciklus elemet, amely tartalmazza a korábban létrehozott szekvenciát.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Végezd el
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Szükségünk van egy ciklus elemre az éles fázisban, éppúgy, mint a gyakorló fázisban. Ezért húzzunk egy ciklus elemet az <code>Item eszköztárból</code> az utolsó <code>form_text_display</code> elemre.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2509651624.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Az Áttekintés és Tab ablak tartalma egy újabb ciklus beszúrása után</figcaption>
+</figure>
+</div>
+<p>Az újonnan létrehozott ciklus (amelyet <code>new_1_loop</code>-nek nevezünk) üres, és egy szekvenciával kell kitölteni, éppúgy, mint az előzőleg létrehozott ciklust. Azonban mivel a gyakorló és az éles rész kérdései azonosak lesznek, így ugyanazt a szekvenciát kell használnunk. Ezért nem kell új szekvenciát az <code>Item eszköztárból</code> felhasználni, hanem újra felhasználjuk a meglévőt, azaz létrehozhatunk egy kapcsolt másolatot (<code>Linked copy</code>).</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Végezd el
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ahhoz, hogy a kapcsolt másolatot létrehozzuk, jobb gombbal kattintsunk az előzőleg létrehozott <code>new_sequence</code> elemen, majd válasszuk a <code>Copy (linked)</code> lehetőséget. Most kattintsunk jobb gombbal a <code>new_1_loop</code> elemen, és válasszuk a <code>Paste</code> lehetőséget. A felugró ablakban válasszuk az <code>Insert into new_1_loop</code> lehetőséget.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-440372973.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Az Áttekintés és Tab ablak tartalma egy linkelt szekvencia beszúrása után</figcaption>
+</figure>
+</div>
+</section>
+<section id="adjunk-egy-instrukciós-oldalt-a-kísérlet-végéhez" class="level3" data-number="5.4.5">
+<h3 data-number="5.4.5" class="anchored" data-anchor-id="adjunk-egy-instrukciós-oldalt-a-kísérlet-végéhez"><span class="header-section-number">5.4.5</span> Adjunk egy instrukciós oldalt a kísérlet végéhez</h3>
+<p>Amikor a kísérlet befejeződik, el kell búcsúznunk a résztvevőtől. Ehhez szükségünk van egy új <code>form_text_display</code> elemre.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Végezd el
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Menjünk vissza az <code>experiment</code> szekvenciához, és húzzunk egy <code>form_text_display</code> elemet az <code>Item eszköztárból</code> az <code>new_1_loop</code> elemre.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2736852075.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Az Áttekintés és Tab ablak tartalma az utolsó instrukciós oldal beszúrása után</figcaption>
+</figure>
+</div>
+</section>
+<section id="adjunk-beszédes-neveket-az-itemeknek" class="level3" data-number="5.4.6">
+<h3 data-number="5.4.6" class="anchored" data-anchor-id="adjunk-beszédes-neveket-az-itemeknek"><span class="header-section-number">5.4.6</span> Adjunk beszédes neveket az itemeknek</h3>
+<p>Alapértelmezés szerint az új itemek létrehozás során kevéssé értelmes neveket kaptak, például <code>new_sequence</code> vagy <code>new_2_form_text_display</code>. Jó gyakorlat az elemeknek beszédes nevet választani. Ez sokkal könnyebbé teszi az kísérlet struktúrájának megértését. Ha szeretnénk, akkor minden elemhez hozzáadhatunk egy leírást is. Az elemek nevei alfanumerikus karakterekből és/vagy aláhúzásjelekből állhatnak.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Végezd el
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Válasszuk ki az <code>new_form_text_display</code> elemet az <code>Áttekintő ablakban</code>, duplán kattintsunk a címre a <code>Tab ablak</code> tetején, és nevezzük át az elemet <code>instructions</code>-ra. (Az <code>Áttekintő ablak</code>ban is elvégezhetjuk ezt, a gyorsbillentyű az <kbd>F2</kbd>).</li>
+<li>Nevezzük át az <code>new_loop</code> elemet <code>practice_loop</code>-ra.</li>
+<li>Nevezzük át az <code>new_sequence</code> elemet <code>block_sequence</code>-re. Mivel ezt az elemet kapcsolt másolattal lejjebb is felhasználtuk, a <code>new_1_loop</code> elem neve is automatikusan megváltozik. (Látjuk, hogy a kapcsolt másolatok használata milyen hatékony, mindig használjuk, ha ez lehetséges.)</li>
+<li>Nevezzük át az <code>new_1_form_text_display</code> elemet <code>end_of_practice</code>-re.</li>
+<li>Nevezzük át az <code>new_1_loop</code> elemet <code>experimental_loop</code>-ra.</li>
+<li>Nevezzük át az <code>new_2_form_text_display</code> elemet <code>end_of_experiment</code>-re.</li>
+</ul>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-3138849372.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Az Áttekintés és Tab ablak tartalma az utolsó instrukciós oldal beszúrása után</figcaption>
+</figure>
+</div>
+</section>
+<section id="adjunk-beszédes-nevet-az-egész-kísérletnek" class="level3" data-number="5.4.7">
+<h3 data-number="5.4.7" class="anchored" data-anchor-id="adjunk-beszédes-nevet-az-egész-kísérletnek"><span class="header-section-number">5.4.7</span> Adjunk beszédes nevet az egész kísérletnek</h3>
+<p>A kísérlet egészének is van egy címe és egy leírása. Kattintsunk a <code>New experiment</code> elemre az <code>Áttekintő ablakban</code>. A <code>New experiment</code> címet ugyanúgy átnevezhetjük, mint az elemeket.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Végezd el
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Nevezzük át a kísérletet <code>Tutorial: Gaze cuing</code>-re. Az elemek nevével ellentétben a kísérlet címe tartalmazhat szóközöket, és más írásjeleket is.</p>
+</div>
+</div>
+<p>Az <code>Áttekintő ablak</code>ban az egész kísérlet így néz ki, mint a <span class="quarto-unresolved-ref">?fig-osszefoglalo-01</span> ábrán.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-4210607197.png" class="img-fluid figure-img" width="600"></p>
+<figcaption class="figure-caption">Az Áttekintés és Tab ablak tartalma az utolsó instrukciós oldal beszúrása után</figcaption>
+</figure>
+</div>
+<p>Ideje elmenteni a kísérletet. A gyorsbillentyű a <kbd>Ctrl+S</kbd>.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-friesen1998" class="csl-entry" role="listitem">
+Friesen, C. K., &amp; Kingstone, A. (1998). The eyes have it! Reflexive orienting is triggered by nonpredictive gaze. <em>Psychonomic Bulletin &amp; Review</em>, <em>5</em>(3), 490–495. <a href="https://doi.org/10.3758/bf03208827">https://doi.org/10.3758/bf03208827</a>
+</div>
+</div>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Sikeres másolás!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Sikeres másolás!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./04_elso_lepesek.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Első lépések</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./09_hivatkozas.html" class="pagination-link">
+        <span class="nav-page-text">Hivatkozások</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
